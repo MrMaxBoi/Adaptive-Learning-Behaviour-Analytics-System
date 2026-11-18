@@ -35,3 +35,37 @@
 
 ### Next (Week 2)
 Mongoose models + repositories, auth, practice API, and the seed script that loads `content/*.json` and authors the full hiragana + N5 bank.
+
+## 2026-11-18 — Week 2: persistence, auth, practice API, seed
+
+**Closes:** FR-01/FR-02 (accounts + roles, via Clerk — see deviation), FR-03 (profile), FR-10/FR-12/FR-13 (attempt/session/exposure records), FR-21/FR-30 (SM-2 + BKT persisted on each answer), FR-40–43 (practice API builds sessions). NFR-04 (input validation, secrets in env), NFR-05 (per-learner isolation + role gate).
+
+### Done
+- **Shared schemas extended (`shared/src`):** added `User`, `PracticeSession` (+ plan/summary), `QuestionExposure` to `domain.ts`; new `api.ts` with the §9 request/response contracts (`CreateSession*`, `SubmitAnswer*`, `FinishSession*`, `PublicQuestion`, `MeResponse`, `UpdateProfile*`, `ApiError`). `PublicQuestion` deliberately omits `answer`/`explanation` so the plan never leaks answers to the client.
+- **Config (`server/src/config.ts`):** Zod-validated env; fails fast on bad config; `requireClerk()` guards the keys only where live auth runs (so tests/simulation can import server code without Clerk). `.env.example` documents every var.
+- **Mongoose models (`server/src/db/models`):** all eight §4 collections, hand-written, with the §4 unique indexes (`(userId, conceptId)`, `(userId, skillId)`, `(userId, questionId)`, unique `email`/`clerkUserId`). Model reuse guard for repeated test connections.
+- **Repositories (`server/src/repositories`):** thin per-collection data access — the only non-seed code touching Mongoose. `buildSnapshot(userId)` projects stored records into the pure `LearnerSnapshot` (Date → epoch-ms), recomputing skill status from stored `pMastery` so the snapshot is internally consistent. Engine still touches no I/O (NFR-08 preserved).
+- **Services (`server/src/services/practice.service.ts`):** the §3.4 one-answer flow — grade (§5.1) → SM-2 (§5.2) → BKT (§5.4) → persist Attempt + Memory + Coverage. `createSession` runs stage + strategy and records exposures; `finishSession` writes the summary. Ownership checks raise `ForbiddenError` (NFR-05).
+- **Middleware (`server/src/middleware`):** `requireAuth` (injectable Clerk resolver → JIT user provisioning), `requireRole` (NFR-05), `validateBody` (Zod), and the single §9 error envelope `{ error: { code, message } }`.
+- **App + entrypoint (`server/src/app.ts`, `index.ts`):** Express app factory (resolver injectable for tests), CORS for the client origin, `/api/v1` routes behind auth; production wires `clerkMiddleware()` and connects to Atlas. Backend is stateless (all state in Atlas) so Render free-tier sleep/restart loses nothing.
+- **Seed (`server/src/db/seed.ts`):** reads every `content/*.json`, validates with the Zod `ContentFile` schema, fills defaults, upserts skills + questions. Idempotent.
+- **Tests (Vitest):** +21 tests — a Zod↔Mongoose parity suite (field sets must agree; asserts the Clerk deviation), config validation, and an in-memory-MongoDB integration suite covering JIT provisioning, `/me` read/update, the full session→answer→finish flow, answer-leak protection, session-size cap, and cross-learner isolation (403).
+
+### Results
+- `npm test` (full, incl. integration): **86 passing** (was 65). Engine coverage unchanged at 99.73% / 93.93% (NFR-08).
+- `tsc -b`: clean.
+
+### Tech-stack decisions (approved this session)
+- **DB:** MongoDB Atlas (free M0) + Mongoose.
+- **Validation:** Zod is the single source of truth; Mongoose hand-written; a parity test prevents drift (not auto-generated).
+- **Auth:** Clerk (Google login).
+- **Hosting:** backend on Render (free), frontend on Vercel (free). Backend kept stateless for Render's sleep/restart.
+
+### Deviation from the spec (approved)
+- **Auth:** SPEC §9 / NFR-04 specify local email+password with bcrypt + JWT and `/auth/register` + `/auth/login`. This build delegates identity to **Clerk** (Google login) instead. Consequences: `users.passwordHash` is removed in favour of `clerkUserId`; the `/auth/*` routes are not implemented (Clerk hosts sign-in); `requireAuth` verifies the Clerk session and provisions the local `User` on first login. NFR-04's *input validation / secrets-in-env* and NFR-05's *per-learner isolation + educator role gate* are still honoured server-side. Recorded in `docs/SOURCES.md`.
+
+### Deferred
+- **Full content bank (decision #12):** the seed loads whatever is in `content/*.json`; the authored bank is still the Week 1 slice (10 concepts). Authoring the full 46 hiragana + ~50 N5 words is the one outstanding Week 2 content item and its own focused pass.
+
+### Next (Week 3)
+Client: login (Clerk React), practice screen, learner dashboard with plain-language text; insight service.

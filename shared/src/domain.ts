@@ -28,6 +28,27 @@ export type SelectionReason = z.infer<typeof SelectionReason>;
 export const StrategyName = z.enum(['adaptive', 'static']);
 export type StrategyName = z.infer<typeof StrategyName>;
 
+/**
+ * §4.1 `users`.
+ *
+ * DEVIATION FROM SPEC §9 / NFR-04: identity is delegated to Clerk (Google
+ * login) rather than email/password + bcrypt. The spec's `passwordHash` field
+ * is therefore absent and replaced by `clerkUserId` (the external subject id).
+ * NFR-05 (a learner reads only their own data; educator role gating) still
+ * holds and is enforced server-side from the verified Clerk subject + role.
+ */
+export const User = z.object({
+  _id: z.string(),
+  clerkUserId: z.string(),
+  email: z.string().email(),
+  displayName: z.string(),
+  role: Role,
+  classCode: z.string().nullable(),
+  dailyGoal: z.number().int().positive().nullable(),
+  createdAt: z.coerce.date(),
+});
+export type User = z.infer<typeof User>;
+
 export const Stage = z.enum([
   'cold_start',
   'foundation_building',
@@ -116,3 +137,38 @@ export const Attempt = z.object({
   answeredAt: z.coerce.date(),
 });
 export type Attempt = z.infer<typeof Attempt>;
+
+/** §4.4 `sessions`. */
+export const SessionPlanItem = z.object({
+  questionId: z.string(),
+  reason: SelectionReason,
+});
+export type SessionPlanItem = z.infer<typeof SessionPlanItem>;
+
+export const SessionSummary = z.object({
+  answered: z.number().int().nonnegative(),
+  correct: z.number().int().nonnegative(),
+  avgResponseMs: z.number().nonnegative(),
+});
+export type SessionSummary = z.infer<typeof SessionSummary>;
+
+export const PracticeSession = z.object({
+  _id: z.string(),
+  userId: z.string(),
+  strategy: StrategyName,
+  stage: Stage,
+  plan: z.array(SessionPlanItem),
+  startedAt: z.coerce.date(),
+  endedAt: z.coerce.date().nullable(),
+  summary: SessionSummary,
+});
+export type PracticeSession = z.infer<typeof PracticeSession>;
+
+/** §4.8 `questionexposures`. */
+export const QuestionExposure = z.object({
+  userId: z.string(),
+  questionId: z.string(),
+  timesShown: z.number().int().nonnegative(),
+  lastShownAt: z.coerce.date(),
+});
+export type QuestionExposure = z.infer<typeof QuestionExposure>;

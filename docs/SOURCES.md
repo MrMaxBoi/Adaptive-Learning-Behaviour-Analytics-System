@@ -18,3 +18,19 @@ origin (SPEC §0, §14).
 - Ebbinghaus, H. (1885). *Über das Gedächtnis*.
 - Settles, B., & Meeder, B. (2016). A trainable spaced repetition model for language learning. *Proceedings of ACL*.
 - Wozniak, P. A. (1990). *Optimization of learning* (SuperMemo SM-2 algorithm).
+
+## Deviations from SPEC.md
+
+Design changes made during implementation, with approval, that differ from the
+specification as originally written.
+
+| Area | SPEC says | Implemented as | Reason |
+|---|---|---|---|
+| Authentication | §9 / NFR-04: local email+password, bcrypt + JWT, `/auth/register` + `/auth/login` | Identity delegated to **Clerk** (Google login); `users.passwordHash` → `clerkUserId`; no `/auth/*` routes; `requireAuth` verifies the Clerk session and provisions the local user on first login | Fastest route to Google sign-in with least code; NFR-04 validation/secrets-in-env and NFR-05 isolation/role-gate still honoured server-side (Week 2 decision) |
+
+### Deployment choices (not spec requirements)
+
+- **Database:** MongoDB Atlas (free M0 tier).
+- **Backend hosting:** Render (free web service). Backend is stateless so sleep/restart loses no data.
+- **Frontend hosting:** Vercel (free).
+- **Auth service:** Clerk (free tier).
