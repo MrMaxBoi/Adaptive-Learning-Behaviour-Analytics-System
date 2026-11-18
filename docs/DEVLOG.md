@@ -100,3 +100,35 @@ Drafted a one-line note for the supervisor at `docs/supervisor-note-auth.md` so 
 
 ### Next (Week 3)
 Client scaffold (React + Clerk), practice screen, learner analytics dashboard. Hold the install/build until host memory frees.
+
+---
+
+## 2026-11-18 (later) — Week 3 part 1: dashboard API + client source (build deferred)
+
+### Context / constraint
+Host memory was **critically low** (~1.7–1.9 GB free) for the whole session. A Vite scaffold (`npm create vite` + install + dev server) is exactly the heavy step the runtime warns against under that pressure, so I split Week 3: write every source and config file now (no install, no build — safe), and defer the one heavy step (client `npm install` + `tsc`/Vite build + full/integration test run) until memory frees. Nothing here required an install.
+
+### Server — dashboard read model (FR-50..52)
+- **`server/src/services/insight.service.ts`** — pure plain-language generators (§7.2). One place enforces NFR-07 (no model terms: "probability", "ease factor", stage names). 10 generators: accuracy, mastery, retention trend, weak concept, response time, revision, history, projection, per-item reason, next-up heading.
+- **`server/src/services/dashboard.service.ts`** — assembles the 7 proposal metrics + "next up" from stored records via the repositories; reuses the engine's pure `retention` / `masteryStatus` / `retentionBand`; pairs each metric with an insight sentence. Read-only, single-pass aggregation (NFR-02); userId comes from the verified token only (NFR-05).
+- **`server/src/routes/dashboard.routes.ts`** — `GET /dashboard/summary`, `GET /dashboard/next-up`; mounted under `/api/v1` in `app.ts`.
+- **`shared/src/api.ts`** — added `DashboardSummaryResponse`, `NextUpResponse`, and the metric/series/bar/weak-concept contracts (shared with the client).
+
+### Client — Vite + React + TS + Clerk + Recharts (source only)
+- Config: `client/package.json` (added to root workspaces + tsconfig refs), `tsconfig.json` (DOM + react-jsx), `vite.config.ts` (dev proxy /api → :4000), `index.html`, `.env.example`, `vite-env.d.ts`.
+- `src/api/client.ts` — typed fetch over the `@fyp/shared` contracts, Clerk token on every request, unwraps the `{ error }` envelope; `src/api/hooks.ts` binds it to Clerk's `getToken`.
+- `src/main.tsx` — Clerk + React Query + Router providers; `src/App.tsx` — `<SignedIn>/<SignedOut>` route gate.
+- Pages: `SignInPage` (hosted Clerk sign-in; no password ever touches the client), `PracticePage` (start → answer with client-side response-time timing FR-11 → immediate feedback → finish), `DashboardPage` (7 MetricCards + next-up, Recharts line/bar).
+- `components/AppShell.tsx`, `components/MetricCard.tsx` (renders **bold** from sentences), `store/practice.ts` (Zustand session state + render-time stamp), `styles.css`.
+- Removed the now-redundant `client/src/**/.gitkeep` placeholders.
+
+### Verification (light steps only)
+- `npx vitest run test/insight.test.ts`: **8 passing** — the NFR-07 banned-vocabulary assertion covers every sentence the service can emit, plus wording-behaviour checks.
+- `tsc -b shared server`: **clean** (after fixing a missing `SkillStatus` import and loosening two helper param types for Mongoose `lean()` shapes).
+- **NOT run under this memory pressure:** the full server suite (86 prior tests), the mongodb-memory-server integration suite, and any client install/build/typecheck. These are the deferred heavy steps.
+
+### Still pending for Week 3
+- Client `npm install` + `tsc -b` (full, incl. client) + `vite build` once memory frees — to confirm the client compiles and bundles.
+- A dashboard integration test (summary/next-up against in-memory Mongo), to run with the rest of the integration suite.
+- Clerk + Atlas env setup to run end-to-end locally.
+- Full content bank (decision #12) — still the one outstanding content item.

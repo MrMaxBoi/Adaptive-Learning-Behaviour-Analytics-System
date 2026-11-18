@@ -8,6 +8,7 @@ import {
 import { errorHandler, notFoundHandler } from './middleware/error.js';
 import { meRouter } from './routes/me.routes.js';
 import { practiceRouter } from './routes/practice.routes.js';
+import { dashboardRouter } from './routes/dashboard.routes.js';
 
 /**
  * Build the Express app (§9). The Clerk resolver is injectable so integration
@@ -53,6 +54,7 @@ export function createApp(opts: AppOptions): Express {
   api.use(requireAuth(resolve));
   api.use('/me', meRouter());
   api.use('/practice', practiceRouter(env));
+  api.use('/dashboard', dashboardRouter());
   app.use('/api/v1', api);
 
   app.use(notFoundHandler);
