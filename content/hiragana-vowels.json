@@ -1,0 +1,113 @@
+{
+  "skills": [
+    {
+      "id": "hira-vowels",
+      "name": "Hiragana vowels",
+      "topic": "hiragana",
+      "level": 1,
+      "prerequisites": []
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-kana-a-r",
+      "skillId": "hira-vowels",
+      "conceptId": "kana-a",
+      "prompt": "Which romaji matches あ?",
+      "options": ["a", "i", "u", "e"],
+      "answer": "a",
+      "explanation": "あ is read \"a\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-i-r",
+      "skillId": "hira-vowels",
+      "conceptId": "kana-i",
+      "prompt": "Which romaji matches い?",
+      "options": ["a", "i", "u", "o"],
+      "answer": "i",
+      "explanation": "い is read \"i\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-u-r",
+      "skillId": "hira-vowels",
+      "conceptId": "kana-u",
+      "prompt": "Which romaji matches う?",
+      "options": ["e", "i", "u", "o"],
+      "answer": "u",
+      "explanation": "う is read \"u\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-e-r",
+      "skillId": "hira-vowels",
+      "conceptId": "kana-e",
+      "prompt": "Which romaji matches え?",
+      "options": ["a", "e", "u", "o"],
+      "answer": "e",
+      "explanation": "え is read \"e\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-o-r",
+      "skillId": "hira-vowels",
+      "conceptId": "kana-o",
+      "prompt": "Which romaji matches お?",
+      "options": ["a", "i", "u", "o"],
+      "answer": "o",
+      "explanation": "お is read \"o\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-a-k",
+      "skillId": "hira-vowels",
+      "conceptId": "kana-a",
+      "prompt": "Which kana is read \"a\"?",
+      "options": ["あ", "い", "う", "え"],
+      "answer": "あ",
+      "explanation": "\"a\" is written あ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-i-k",
+      "skillId": "hira-vowels",
+      "conceptId": "kana-i",
+      "prompt": "Which kana is read \"i\"?",
+      "options": ["あ", "い", "お", "え"],
+      "answer": "い",
+      "explanation": "\"i\" is written い.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-u-k",
+      "skillId": "hira-vowels",
+      "conceptId": "kana-u",
+      "prompt": "Which kana is read \"u\"?",
+      "options": ["う", "い", "お", "え"],
+      "answer": "う",
+      "explanation": "\"u\" is written う.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-e-k",
+      "skillId": "hira-vowels",
+      "conceptId": "kana-e",
+      "prompt": "Which kana is read \"e\"?",
+      "options": ["あ", "い", "う", "え"],
+      "answer": "え",
+      "explanation": "\"e\" is written え.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-o-k",
+      "skillId": "hira-vowels",
+      "conceptId": "kana-o",
+      "prompt": "Which kana is read \"o\"?",
+      "options": ["あ", "お", "う", "え"],
+      "answer": "お",
+      "explanation": "\"o\" is written お.",
+      "difficulty": 1
+    }
+  ]
+}

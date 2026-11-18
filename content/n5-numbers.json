@@ -1,0 +1,113 @@
+{
+  "skills": [
+    {
+      "id": "n5-numbers",
+      "name": "N5 numbers",
+      "topic": "vocabulary",
+      "level": 2,
+      "prerequisites": ["hira-vowels"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-word-ichi-m",
+      "skillId": "n5-numbers",
+      "conceptId": "word-ichi",
+      "prompt": "What does いち mean?",
+      "options": ["one", "two", "three", "four"],
+      "answer": "one",
+      "explanation": "いち (ichi) means \"one\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ni-m",
+      "skillId": "n5-numbers",
+      "conceptId": "word-ni",
+      "prompt": "What does に mean?",
+      "options": ["one", "two", "three", "five"],
+      "answer": "two",
+      "explanation": "に (ni) means \"two\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-san-m",
+      "skillId": "n5-numbers",
+      "conceptId": "word-san",
+      "prompt": "What does さん mean?",
+      "options": ["two", "three", "four", "six"],
+      "answer": "three",
+      "explanation": "さん (san) means \"three\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-yon-m",
+      "skillId": "n5-numbers",
+      "conceptId": "word-yon",
+      "prompt": "What does よん mean?",
+      "options": ["three", "four", "five", "seven"],
+      "answer": "four",
+      "explanation": "よん (yon) means \"four\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-go-m",
+      "skillId": "n5-numbers",
+      "conceptId": "word-go",
+      "prompt": "What does ご mean?",
+      "options": ["four", "five", "six", "nine"],
+      "answer": "five",
+      "explanation": "ご (go) means \"five\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ichi-w",
+      "skillId": "n5-numbers",
+      "conceptId": "word-ichi",
+      "prompt": "How do you say \"one\"?",
+      "options": ["いち", "に", "さん", "ご"],
+      "answer": "いち",
+      "explanation": "\"one\" is いち (ichi).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ni-w",
+      "skillId": "n5-numbers",
+      "conceptId": "word-ni",
+      "prompt": "How do you say \"two\"?",
+      "options": ["いち", "に", "よん", "ご"],
+      "answer": "に",
+      "explanation": "\"two\" is に (ni).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-san-w",
+      "skillId": "n5-numbers",
+      "conceptId": "word-san",
+      "prompt": "How do you say \"three\"?",
+      "options": ["に", "さん", "よん", "ご"],
+      "answer": "さん",
+      "explanation": "\"three\" is さん (san).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-yon-w",
+      "skillId": "n5-numbers",
+      "conceptId": "word-yon",
+      "prompt": "How do you say \"four\"?",
+      "options": ["いち", "さん", "よん", "ご"],
+      "answer": "よん",
+      "explanation": "\"four\" is よん (yon).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-go-w",
+      "skillId": "n5-numbers",
+      "conceptId": "word-go",
+      "prompt": "How do you say \"five\"?",
+      "options": ["よん", "に", "さん", "ご"],
+      "answer": "ご",
+      "explanation": "\"five\" is ご (go).",
+      "difficulty": 1
+    }
+  ]
+}
