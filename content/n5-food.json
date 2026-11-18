@@ -1,0 +1,213 @@
+{
+  "skills": [
+    {
+      "id": "n5-food",
+      "name": "N5 food",
+      "topic": "vocabulary",
+      "level": 2,
+      "prerequisites": ["hira-vowels", "hira-k", "hira-s", "hira-t", "hira-n", "hira-h", "hira-m", "hira-y", "hira-r"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-word-mizu-m",
+      "skillId": "n5-food",
+      "conceptId": "word-mizu",
+      "prompt": "What does みず mean?",
+      "options": ["water", "tea", "rice", "fish"],
+      "answer": "water",
+      "explanation": "みず (mizu) means \"water\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ocha-m",
+      "skillId": "n5-food",
+      "conceptId": "word-ocha",
+      "prompt": "What does おちゃ mean?",
+      "options": ["tea", "water", "milk", "meat"],
+      "answer": "tea",
+      "explanation": "おちゃ (ocha) means \"tea\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-gohan-m",
+      "skillId": "n5-food",
+      "conceptId": "word-gohan",
+      "prompt": "What does ごはん mean?",
+      "options": ["rice / meal", "bread", "fish", "egg"],
+      "answer": "rice / meal",
+      "explanation": "ごはん (gohan) means \"cooked rice\" or \"meal\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-pan-m",
+      "skillId": "n5-food",
+      "conceptId": "word-pan",
+      "prompt": "What does ぱん mean?",
+      "options": ["bread", "rice", "water", "tea"],
+      "answer": "bread",
+      "explanation": "ぱん (pan) means \"bread\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-sakana-m",
+      "skillId": "n5-food",
+      "conceptId": "word-sakana",
+      "prompt": "What does さかな mean?",
+      "options": ["fish", "meat", "vegetable", "fruit"],
+      "answer": "fish",
+      "explanation": "さかな (sakana) means \"fish\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-niku-m",
+      "skillId": "n5-food",
+      "conceptId": "word-niku",
+      "prompt": "What does にく mean?",
+      "options": ["meat", "fish", "rice", "egg"],
+      "answer": "meat",
+      "explanation": "にく (niku) means \"meat\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-tamago-m",
+      "skillId": "n5-food",
+      "conceptId": "word-tamago",
+      "prompt": "What does たまご mean?",
+      "options": ["egg", "milk", "bread", "fish"],
+      "answer": "egg",
+      "explanation": "たまご (tamago) means \"egg\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-yasai-m",
+      "skillId": "n5-food",
+      "conceptId": "word-yasai",
+      "prompt": "What does やさい mean?",
+      "options": ["vegetable", "fruit", "meat", "fish"],
+      "answer": "vegetable",
+      "explanation": "やさい (yasai) means \"vegetable\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-kudamono-m",
+      "skillId": "n5-food",
+      "conceptId": "word-kudamono",
+      "prompt": "What does くだもの mean?",
+      "options": ["fruit", "vegetable", "meat", "bread"],
+      "answer": "fruit",
+      "explanation": "くだもの (kudamono) means \"fruit\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-gyuunyuu-m",
+      "skillId": "n5-food",
+      "conceptId": "word-gyuunyuu",
+      "prompt": "What does ぎゅうにゅう mean?",
+      "options": ["milk", "tea", "water", "egg"],
+      "answer": "milk",
+      "explanation": "ぎゅうにゅう (gyuunyuu) means \"milk\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-mizu-w",
+      "skillId": "n5-food",
+      "conceptId": "word-mizu",
+      "prompt": "How do you say \"water\"?",
+      "options": ["みず", "おちゃ", "ごはん", "ぱん"],
+      "answer": "みず",
+      "explanation": "\"water\" is みず (mizu).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ocha-w",
+      "skillId": "n5-food",
+      "conceptId": "word-ocha",
+      "prompt": "How do you say \"tea\"?",
+      "options": ["みず", "おちゃ", "にく", "たまご"],
+      "answer": "おちゃ",
+      "explanation": "\"tea\" is おちゃ (ocha).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-gohan-w",
+      "skillId": "n5-food",
+      "conceptId": "word-gohan",
+      "prompt": "How do you say \"rice / meal\"?",
+      "options": ["ごはん", "ぱん", "さかな", "たまご"],
+      "answer": "ごはん",
+      "explanation": "\"rice / meal\" is ごはん (gohan).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-pan-w",
+      "skillId": "n5-food",
+      "conceptId": "word-pan",
+      "prompt": "How do you say \"bread\"?",
+      "options": ["ぱん", "ごはん", "みず", "おちゃ"],
+      "answer": "ぱん",
+      "explanation": "\"bread\" is ぱん (pan).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-sakana-w",
+      "skillId": "n5-food",
+      "conceptId": "word-sakana",
+      "prompt": "How do you say \"fish\"?",
+      "options": ["さかな", "にく", "やさい", "くだもの"],
+      "answer": "さかな",
+      "explanation": "\"fish\" is さかな (sakana).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-niku-w",
+      "skillId": "n5-food",
+      "conceptId": "word-niku",
+      "prompt": "How do you say \"meat\"?",
+      "options": ["にく", "さかな", "たまご", "やさい"],
+      "answer": "にく",
+      "explanation": "\"meat\" is にく (niku).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-tamago-w",
+      "skillId": "n5-food",
+      "conceptId": "word-tamago",
+      "prompt": "How do you say \"egg\"?",
+      "options": ["たまご", "にく", "さかな", "ぱん"],
+      "answer": "たまご",
+      "explanation": "\"egg\" is たまご (tamago).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-yasai-w",
+      "skillId": "n5-food",
+      "conceptId": "word-yasai",
+      "prompt": "How do you say \"vegetable\"?",
+      "options": ["やさい", "くだもの", "さかな", "にく"],
+      "answer": "やさい",
+      "explanation": "\"vegetable\" is やさい (yasai).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-kudamono-w",
+      "skillId": "n5-food",
+      "conceptId": "word-kudamono",
+      "prompt": "How do you say \"fruit\"?",
+      "options": ["くだもの", "やさい", "たまご", "ごはん"],
+      "answer": "くだもの",
+      "explanation": "\"fruit\" is くだもの (kudamono).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-gyuunyuu-w",
+      "skillId": "n5-food",
+      "conceptId": "word-gyuunyuu",
+      "prompt": "How do you say \"milk\"?",
+      "options": ["ぎゅうにゅう", "おちゃ", "みず", "ごはん"],
+      "answer": "ぎゅうにゅう",
+      "explanation": "\"milk\" is ぎゅうにゅう (gyuunyuu).",
+      "difficulty": 1
+    }
+  ]
+}

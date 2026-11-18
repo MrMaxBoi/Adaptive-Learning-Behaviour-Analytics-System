@@ -1,0 +1,73 @@
+{
+  "skills": [
+    {
+      "id": "hira-w",
+      "name": "Hiragana W row and N",
+      "topic": "hiragana",
+      "level": 1,
+      "prerequisites": ["hira-vowels"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-kana-wa-r",
+      "skillId": "hira-w",
+      "conceptId": "kana-wa",
+      "prompt": "Which romaji matches わ?",
+      "options": ["wa", "wo", "n", "ya"],
+      "answer": "wa",
+      "explanation": "わ is read \"wa\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-wo-r",
+      "skillId": "hira-w",
+      "conceptId": "kana-wo",
+      "prompt": "Which romaji matches を?",
+      "options": ["wa", "wo", "n", "yo"],
+      "answer": "wo",
+      "explanation": "を is read \"wo\" (object particle, often \"o\").",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-n-r",
+      "skillId": "hira-w",
+      "conceptId": "kana-n",
+      "prompt": "Which romaji matches ん?",
+      "options": ["wa", "wo", "n", "mu"],
+      "answer": "n",
+      "explanation": "ん is read \"n\", the only standalone consonant.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-wa-k",
+      "skillId": "hira-w",
+      "conceptId": "kana-wa",
+      "prompt": "Which kana is read \"wa\"?",
+      "options": ["わ", "を", "ん", "や"],
+      "answer": "わ",
+      "explanation": "\"wa\" is written わ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-wo-k",
+      "skillId": "hira-w",
+      "conceptId": "kana-wo",
+      "prompt": "Which kana is read \"wo\"?",
+      "options": ["わ", "を", "ん", "よ"],
+      "answer": "を",
+      "explanation": "\"wo\" is written を.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-n-k",
+      "skillId": "hira-w",
+      "conceptId": "kana-n",
+      "prompt": "Which kana is read \"n\"?",
+      "options": ["わ", "を", "ん", "む"],
+      "answer": "ん",
+      "explanation": "\"n\" is written ん.",
+      "difficulty": 1
+    }
+  ]
+}

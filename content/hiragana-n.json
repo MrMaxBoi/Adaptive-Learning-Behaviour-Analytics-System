@@ -1,0 +1,113 @@
+{
+  "skills": [
+    {
+      "id": "hira-n",
+      "name": "Hiragana N row",
+      "topic": "hiragana",
+      "level": 1,
+      "prerequisites": ["hira-vowels"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-kana-na-r",
+      "skillId": "hira-n",
+      "conceptId": "kana-na",
+      "prompt": "Which romaji matches な?",
+      "options": ["na", "ni", "nu", "ne"],
+      "answer": "na",
+      "explanation": "な is read \"na\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ni-r",
+      "skillId": "hira-n",
+      "conceptId": "kana-ni",
+      "prompt": "Which romaji matches に?",
+      "options": ["na", "ni", "nu", "no"],
+      "answer": "ni",
+      "explanation": "に is read \"ni\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-nu-r",
+      "skillId": "hira-n",
+      "conceptId": "kana-nu",
+      "prompt": "Which romaji matches ぬ?",
+      "options": ["ne", "ni", "nu", "no"],
+      "answer": "nu",
+      "explanation": "ぬ is read \"nu\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ne-r",
+      "skillId": "hira-n",
+      "conceptId": "kana-ne",
+      "prompt": "Which romaji matches ね?",
+      "options": ["na", "ne", "nu", "no"],
+      "answer": "ne",
+      "explanation": "ね is read \"ne\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-no-r",
+      "skillId": "hira-n",
+      "conceptId": "kana-no",
+      "prompt": "Which romaji matches の?",
+      "options": ["na", "ni", "nu", "no"],
+      "answer": "no",
+      "explanation": "の is read \"no\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-na-k",
+      "skillId": "hira-n",
+      "conceptId": "kana-na",
+      "prompt": "Which kana is read \"na\"?",
+      "options": ["な", "に", "ぬ", "ね"],
+      "answer": "な",
+      "explanation": "\"na\" is written な.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ni-k",
+      "skillId": "hira-n",
+      "conceptId": "kana-ni",
+      "prompt": "Which kana is read \"ni\"?",
+      "options": ["な", "に", "の", "ね"],
+      "answer": "に",
+      "explanation": "\"ni\" is written に.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-nu-k",
+      "skillId": "hira-n",
+      "conceptId": "kana-nu",
+      "prompt": "Which kana is read \"nu\"?",
+      "options": ["ぬ", "に", "の", "ね"],
+      "answer": "ぬ",
+      "explanation": "\"nu\" is written ぬ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ne-k",
+      "skillId": "hira-n",
+      "conceptId": "kana-ne",
+      "prompt": "Which kana is read \"ne\"?",
+      "options": ["な", "に", "ぬ", "ね"],
+      "answer": "ね",
+      "explanation": "\"ne\" is written ね.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-no-k",
+      "skillId": "hira-n",
+      "conceptId": "kana-no",
+      "prompt": "Which kana is read \"no\"?",
+      "options": ["な", "の", "ぬ", "ね"],
+      "answer": "の",
+      "explanation": "\"no\" is written の.",
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "skills": [
+    {
+      "id": "n5-greetings",
+      "name": "N5 greetings",
+      "topic": "vocabulary",
+      "level": 2,
+      "prerequisites": ["hira-vowels", "hira-k", "hira-s", "hira-t", "hira-n", "hira-h", "hira-m", "hira-y", "hira-r", "hira-w"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-word-konnichiwa-m",
+      "skillId": "n5-greetings",
+      "conceptId": "word-konnichiwa",
+      "prompt": "What does こんにちは mean?",
+      "options": ["hello", "good night", "goodbye", "thank you"],
+      "answer": "hello",
+      "explanation": "こんにちは (konnichiwa) means \"hello / good afternoon\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ohayou-m",
+      "skillId": "n5-greetings",
+      "conceptId": "word-ohayou",
+      "prompt": "What does おはよう mean?",
+      "options": ["good morning", "good night", "hello", "welcome"],
+      "answer": "good morning",
+      "explanation": "おはよう (ohayou) means \"good morning\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-konbanwa-m",
+      "skillId": "n5-greetings",
+      "conceptId": "word-konbanwa",
+      "prompt": "What does こんばんは mean?",
+      "options": ["good evening", "good morning", "goodbye", "sorry"],
+      "answer": "good evening",
+      "explanation": "こんばんは (konbanwa) means \"good evening\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-oyasumi-m",
+      "skillId": "n5-greetings",
+      "conceptId": "word-oyasumi",
+      "prompt": "What does おやすみ mean?",
+      "options": ["good night", "good morning", "hello", "thank you"],
+      "answer": "good night",
+      "explanation": "おやすみ (oyasumi) means \"good night\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-sayounara-m",
+      "skillId": "n5-greetings",
+      "conceptId": "word-sayounara",
+      "prompt": "What does さようなら mean?",
+      "options": ["goodbye", "hello", "welcome", "excuse me"],
+      "answer": "goodbye",
+      "explanation": "さようなら (sayounara) means \"goodbye\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-arigatou-m",
+      "skillId": "n5-greetings",
+      "conceptId": "word-arigatou",
+      "prompt": "What does ありがとう mean?",
+      "options": ["thank you", "sorry", "please", "goodbye"],
+      "answer": "thank you",
+      "explanation": "ありがとう (arigatou) means \"thank you\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-sumimasen-m",
+      "skillId": "n5-greetings",
+      "conceptId": "word-sumimasen",
+      "prompt": "What does すみません mean?",
+      "options": ["excuse me / sorry", "thank you", "hello", "good night"],
+      "answer": "excuse me / sorry",
+      "explanation": "すみません (sumimasen) means \"excuse me\" or \"sorry\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-hai-m",
+      "skillId": "n5-greetings",
+      "conceptId": "word-hai",
+      "prompt": "What does はい mean?",
+      "options": ["yes", "no", "maybe", "please"],
+      "answer": "yes",
+      "explanation": "はい (hai) means \"yes\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-iie-m",
+      "skillId": "n5-greetings",
+      "conceptId": "word-iie",
+      "prompt": "What does いいえ mean?",
+      "options": ["no", "yes", "thanks", "sorry"],
+      "answer": "no",
+      "explanation": "いいえ (iie) means \"no\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-hajimemashite-m",
+      "skillId": "n5-greetings",
+      "conceptId": "word-hajimemashite",
+      "prompt": "What does はじめまして mean?",
+      "options": ["nice to meet you", "goodbye", "good night", "thank you"],
+      "answer": "nice to meet you",
+      "explanation": "はじめまして (hajimemashite) means \"nice to meet you\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-konnichiwa-w",
+      "skillId": "n5-greetings",
+      "conceptId": "word-konnichiwa",
+      "prompt": "How do you say \"hello\"?",
+      "options": ["こんにちは", "おはよう", "こんばんは", "さようなら"],
+      "answer": "こんにちは",
+      "explanation": "\"hello\" is こんにちは (konnichiwa).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ohayou-w",
+      "skillId": "n5-greetings",
+      "conceptId": "word-ohayou",
+      "prompt": "How do you say \"good morning\"?",
+      "options": ["こんにちは", "おはよう", "おやすみ", "こんばんは"],
+      "answer": "おはよう",
+      "explanation": "\"good morning\" is おはよう (ohayou).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-konbanwa-w",
+      "skillId": "n5-greetings",
+      "conceptId": "word-konbanwa",
+      "prompt": "How do you say \"good evening\"?",
+      "options": ["おはよう", "こんばんは", "おやすみ", "さようなら"],
+      "answer": "こんばんは",
+      "explanation": "\"good evening\" is こんばんは (konbanwa).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-oyasumi-w",
+      "skillId": "n5-greetings",
+      "conceptId": "word-oyasumi",
+      "prompt": "How do you say \"good night\"?",
+      "options": ["こんばんは", "おやすみ", "おはよう", "ありがとう"],
+      "answer": "おやすみ",
+      "explanation": "\"good night\" is おやすみ (oyasumi).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-sayounara-w",
+      "skillId": "n5-greetings",
+      "conceptId": "word-sayounara",
+      "prompt": "How do you say \"goodbye\"?",
+      "options": ["さようなら", "こんにちは", "すみません", "はい"],
+      "answer": "さようなら",
+      "explanation": "\"goodbye\" is さようなら (sayounara).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-arigatou-w",
+      "skillId": "n5-greetings",
+      "conceptId": "word-arigatou",
+      "prompt": "How do you say \"thank you\"?",
+      "options": ["ありがとう", "すみません", "さようなら", "おはよう"],
+      "answer": "ありがとう",
+      "explanation": "\"thank you\" is ありがとう (arigatou).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-sumimasen-w",
+      "skillId": "n5-greetings",
+      "conceptId": "word-sumimasen",
+      "prompt": "How do you say \"excuse me / sorry\"?",
+      "options": ["ありがとう", "すみません", "はい", "いいえ"],
+      "answer": "すみません",
+      "explanation": "\"excuse me / sorry\" is すみません (sumimasen).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-hai-w",
+      "skillId": "n5-greetings",
+      "conceptId": "word-hai",
+      "prompt": "How do you say \"yes\"?",
+      "options": ["はい", "いいえ", "ありがとう", "すみません"],
+      "answer": "はい",
+      "explanation": "\"yes\" is はい (hai).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-iie-w",
+      "skillId": "n5-greetings",
+      "conceptId": "word-iie",
+      "prompt": "How do you say \"no\"?",
+      "options": ["はい", "いいえ", "はじめまして", "おやすみ"],
+      "answer": "いいえ",
+      "explanation": "\"no\" is いいえ (iie).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-hajimemashite-w",
+      "skillId": "n5-greetings",
+      "conceptId": "word-hajimemashite",
+      "prompt": "How do you say \"nice to meet you\"?",
+      "options": ["はじめまして", "さようなら", "おやすみ", "ありがとう"],
+      "answer": "はじめまして",
+      "explanation": "\"nice to meet you\" is はじめまして (hajimemashite).",
+      "difficulty": 1
+    }
+  ]
+}

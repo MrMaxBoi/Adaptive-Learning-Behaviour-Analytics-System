@@ -1,0 +1,113 @@
+{
+  "skills": [
+    {
+      "id": "hira-s",
+      "name": "Hiragana S row",
+      "topic": "hiragana",
+      "level": 1,
+      "prerequisites": ["hira-vowels"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-kana-sa-r",
+      "skillId": "hira-s",
+      "conceptId": "kana-sa",
+      "prompt": "Which romaji matches さ?",
+      "options": ["sa", "shi", "su", "se"],
+      "answer": "sa",
+      "explanation": "さ is read \"sa\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-shi-r",
+      "skillId": "hira-s",
+      "conceptId": "kana-shi",
+      "prompt": "Which romaji matches し?",
+      "options": ["sa", "shi", "su", "so"],
+      "answer": "shi",
+      "explanation": "し is read \"shi\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-su-r",
+      "skillId": "hira-s",
+      "conceptId": "kana-su",
+      "prompt": "Which romaji matches す?",
+      "options": ["se", "shi", "su", "so"],
+      "answer": "su",
+      "explanation": "す is read \"su\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-se-r",
+      "skillId": "hira-s",
+      "conceptId": "kana-se",
+      "prompt": "Which romaji matches せ?",
+      "options": ["sa", "se", "su", "so"],
+      "answer": "se",
+      "explanation": "せ is read \"se\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-so-r",
+      "skillId": "hira-s",
+      "conceptId": "kana-so",
+      "prompt": "Which romaji matches そ?",
+      "options": ["sa", "shi", "su", "so"],
+      "answer": "so",
+      "explanation": "そ is read \"so\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-sa-k",
+      "skillId": "hira-s",
+      "conceptId": "kana-sa",
+      "prompt": "Which kana is read \"sa\"?",
+      "options": ["さ", "し", "す", "せ"],
+      "answer": "さ",
+      "explanation": "\"sa\" is written さ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-shi-k",
+      "skillId": "hira-s",
+      "conceptId": "kana-shi",
+      "prompt": "Which kana is read \"shi\"?",
+      "options": ["さ", "し", "そ", "せ"],
+      "answer": "し",
+      "explanation": "\"shi\" is written し.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-su-k",
+      "skillId": "hira-s",
+      "conceptId": "kana-su",
+      "prompt": "Which kana is read \"su\"?",
+      "options": ["す", "し", "そ", "せ"],
+      "answer": "す",
+      "explanation": "\"su\" is written す.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-se-k",
+      "skillId": "hira-s",
+      "conceptId": "kana-se",
+      "prompt": "Which kana is read \"se\"?",
+      "options": ["さ", "し", "す", "せ"],
+      "answer": "せ",
+      "explanation": "\"se\" is written せ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-so-k",
+      "skillId": "hira-s",
+      "conceptId": "kana-so",
+      "prompt": "Which kana is read \"so\"?",
+      "options": ["さ", "そ", "す", "せ"],
+      "answer": "そ",
+      "explanation": "\"so\" is written そ.",
+      "difficulty": 1
+    }
+  ]
+}

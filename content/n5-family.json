@@ -1,0 +1,213 @@
+{
+  "skills": [
+    {
+      "id": "n5-family",
+      "name": "N5 family",
+      "topic": "vocabulary",
+      "level": 2,
+      "prerequisites": ["hira-vowels", "hira-k", "hira-s", "hira-t", "hira-n", "hira-h", "hira-m", "hira-r"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-word-chichi-m",
+      "skillId": "n5-family",
+      "conceptId": "word-chichi",
+      "prompt": "What does ちち mean?",
+      "options": ["(my) father", "(my) mother", "older brother", "younger sister"],
+      "answer": "(my) father",
+      "explanation": "ちち (chichi) means \"(my) father\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-haha-m",
+      "skillId": "n5-family",
+      "conceptId": "word-haha",
+      "prompt": "What does はは mean?",
+      "options": ["(my) mother", "(my) father", "older sister", "younger brother"],
+      "answer": "(my) mother",
+      "explanation": "はは (haha) means \"(my) mother\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ani-m",
+      "skillId": "n5-family",
+      "conceptId": "word-ani",
+      "prompt": "What does あに mean?",
+      "options": ["older brother", "older sister", "younger brother", "father"],
+      "answer": "older brother",
+      "explanation": "あに (ani) means \"(my) older brother\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ane-m",
+      "skillId": "n5-family",
+      "conceptId": "word-ane",
+      "prompt": "What does あね mean?",
+      "options": ["older sister", "older brother", "younger sister", "mother"],
+      "answer": "older sister",
+      "explanation": "あね (ane) means \"(my) older sister\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-otouto-m",
+      "skillId": "n5-family",
+      "conceptId": "word-otouto",
+      "prompt": "What does おとうと mean?",
+      "options": ["younger brother", "older brother", "younger sister", "father"],
+      "answer": "younger brother",
+      "explanation": "おとうと (otouto) means \"(my) younger brother\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-imouto-m",
+      "skillId": "n5-family",
+      "conceptId": "word-imouto",
+      "prompt": "What does いもうと mean?",
+      "options": ["younger sister", "older sister", "younger brother", "mother"],
+      "answer": "younger sister",
+      "explanation": "いもうと (imouto) means \"(my) younger sister\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-kazoku-m",
+      "skillId": "n5-family",
+      "conceptId": "word-kazoku",
+      "prompt": "What does かぞく mean?",
+      "options": ["family", "friend", "parents", "child"],
+      "answer": "family",
+      "explanation": "かぞく (kazoku) means \"family\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-kodomo-m",
+      "skillId": "n5-family",
+      "conceptId": "word-kodomo",
+      "prompt": "What does こども mean?",
+      "options": ["child", "parent", "family", "friend"],
+      "answer": "child",
+      "explanation": "こども (kodomo) means \"child\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-otoko-m",
+      "skillId": "n5-family",
+      "conceptId": "word-otoko",
+      "prompt": "What does おとこ mean?",
+      "options": ["man", "woman", "child", "parent"],
+      "answer": "man",
+      "explanation": "おとこ (otoko) means \"man\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-onna-m",
+      "skillId": "n5-family",
+      "conceptId": "word-onna",
+      "prompt": "What does おんな mean?",
+      "options": ["woman", "man", "child", "family"],
+      "answer": "woman",
+      "explanation": "おんな (onna) means \"woman\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-chichi-w",
+      "skillId": "n5-family",
+      "conceptId": "word-chichi",
+      "prompt": "How do you say \"(my) father\"?",
+      "options": ["ちち", "はは", "あに", "あね"],
+      "answer": "ちち",
+      "explanation": "\"(my) father\" is ちち (chichi).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-haha-w",
+      "skillId": "n5-family",
+      "conceptId": "word-haha",
+      "prompt": "How do you say \"(my) mother\"?",
+      "options": ["ちち", "はは", "あね", "いもうと"],
+      "answer": "はは",
+      "explanation": "\"(my) mother\" is はは (haha).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ani-w",
+      "skillId": "n5-family",
+      "conceptId": "word-ani",
+      "prompt": "How do you say \"(my) older brother\"?",
+      "options": ["あに", "あね", "おとうと", "ちち"],
+      "answer": "あに",
+      "explanation": "\"(my) older brother\" is あに (ani).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ane-w",
+      "skillId": "n5-family",
+      "conceptId": "word-ane",
+      "prompt": "How do you say \"(my) older sister\"?",
+      "options": ["あに", "あね", "いもうと", "はは"],
+      "answer": "あね",
+      "explanation": "\"(my) older sister\" is あね (ane).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-otouto-w",
+      "skillId": "n5-family",
+      "conceptId": "word-otouto",
+      "prompt": "How do you say \"(my) younger brother\"?",
+      "options": ["おとうと", "あに", "いもうと", "こども"],
+      "answer": "おとうと",
+      "explanation": "\"(my) younger brother\" is おとうと (otouto).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-imouto-w",
+      "skillId": "n5-family",
+      "conceptId": "word-imouto",
+      "prompt": "How do you say \"(my) younger sister\"?",
+      "options": ["いもうと", "あね", "おとうと", "かぞく"],
+      "answer": "いもうと",
+      "explanation": "\"(my) younger sister\" is いもうと (imouto).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-kazoku-w",
+      "skillId": "n5-family",
+      "conceptId": "word-kazoku",
+      "prompt": "How do you say \"family\"?",
+      "options": ["かぞく", "こども", "おとこ", "おんな"],
+      "answer": "かぞく",
+      "explanation": "\"family\" is かぞく (kazoku).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-kodomo-w",
+      "skillId": "n5-family",
+      "conceptId": "word-kodomo",
+      "prompt": "How do you say \"child\"?",
+      "options": ["こども", "かぞく", "おとこ", "おんな"],
+      "answer": "こども",
+      "explanation": "\"child\" is こども (kodomo).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-otoko-w",
+      "skillId": "n5-family",
+      "conceptId": "word-otoko",
+      "prompt": "How do you say \"man\"?",
+      "options": ["おとこ", "おんな", "こども", "かぞく"],
+      "answer": "おとこ",
+      "explanation": "\"man\" is おとこ (otoko).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-onna-w",
+      "skillId": "n5-family",
+      "conceptId": "word-onna",
+      "prompt": "How do you say \"woman\"?",
+      "options": ["おんな", "おとこ", "こども", "はは"],
+      "answer": "おんな",
+      "explanation": "\"woman\" is おんな (onna).",
+      "difficulty": 1
+    }
+  ]
+}

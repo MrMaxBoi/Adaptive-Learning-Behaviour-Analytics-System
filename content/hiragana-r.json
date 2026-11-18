@@ -1,0 +1,113 @@
+{
+  "skills": [
+    {
+      "id": "hira-r",
+      "name": "Hiragana R row",
+      "topic": "hiragana",
+      "level": 1,
+      "prerequisites": ["hira-vowels"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-kana-ra-r",
+      "skillId": "hira-r",
+      "conceptId": "kana-ra",
+      "prompt": "Which romaji matches ら?",
+      "options": ["ra", "ri", "ru", "re"],
+      "answer": "ra",
+      "explanation": "ら is read \"ra\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ri-r",
+      "skillId": "hira-r",
+      "conceptId": "kana-ri",
+      "prompt": "Which romaji matches り?",
+      "options": ["ra", "ri", "ru", "ro"],
+      "answer": "ri",
+      "explanation": "り is read \"ri\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ru-r",
+      "skillId": "hira-r",
+      "conceptId": "kana-ru",
+      "prompt": "Which romaji matches る?",
+      "options": ["re", "ri", "ru", "ro"],
+      "answer": "ru",
+      "explanation": "る is read \"ru\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-re-r",
+      "skillId": "hira-r",
+      "conceptId": "kana-re",
+      "prompt": "Which romaji matches れ?",
+      "options": ["ra", "re", "ru", "ro"],
+      "answer": "re",
+      "explanation": "れ is read \"re\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ro-r",
+      "skillId": "hira-r",
+      "conceptId": "kana-ro",
+      "prompt": "Which romaji matches ろ?",
+      "options": ["ra", "ri", "ru", "ro"],
+      "answer": "ro",
+      "explanation": "ろ is read \"ro\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ra-k",
+      "skillId": "hira-r",
+      "conceptId": "kana-ra",
+      "prompt": "Which kana is read \"ra\"?",
+      "options": ["ら", "り", "る", "れ"],
+      "answer": "ら",
+      "explanation": "\"ra\" is written ら.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ri-k",
+      "skillId": "hira-r",
+      "conceptId": "kana-ri",
+      "prompt": "Which kana is read \"ri\"?",
+      "options": ["ら", "り", "ろ", "れ"],
+      "answer": "り",
+      "explanation": "\"ri\" is written り.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ru-k",
+      "skillId": "hira-r",
+      "conceptId": "kana-ru",
+      "prompt": "Which kana is read \"ru\"?",
+      "options": ["る", "り", "ろ", "れ"],
+      "answer": "る",
+      "explanation": "\"ru\" is written る.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-re-k",
+      "skillId": "hira-r",
+      "conceptId": "kana-re",
+      "prompt": "Which kana is read \"re\"?",
+      "options": ["ら", "り", "る", "れ"],
+      "answer": "れ",
+      "explanation": "\"re\" is written れ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ro-k",
+      "skillId": "hira-r",
+      "conceptId": "kana-ro",
+      "prompt": "Which kana is read \"ro\"?",
+      "options": ["ら", "ろ", "る", "れ"],
+      "answer": "ろ",
+      "explanation": "\"ro\" is written ろ.",
+      "difficulty": 1
+    }
+  ]
+}

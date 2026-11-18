@@ -1,0 +1,113 @@
+{
+  "skills": [
+    {
+      "id": "hira-m",
+      "name": "Hiragana M row",
+      "topic": "hiragana",
+      "level": 1,
+      "prerequisites": ["hira-vowels"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-kana-ma-r",
+      "skillId": "hira-m",
+      "conceptId": "kana-ma",
+      "prompt": "Which romaji matches ま?",
+      "options": ["ma", "mi", "mu", "me"],
+      "answer": "ma",
+      "explanation": "ま is read \"ma\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-mi-r",
+      "skillId": "hira-m",
+      "conceptId": "kana-mi",
+      "prompt": "Which romaji matches み?",
+      "options": ["ma", "mi", "mu", "mo"],
+      "answer": "mi",
+      "explanation": "み is read \"mi\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-mu-r",
+      "skillId": "hira-m",
+      "conceptId": "kana-mu",
+      "prompt": "Which romaji matches む?",
+      "options": ["me", "mi", "mu", "mo"],
+      "answer": "mu",
+      "explanation": "む is read \"mu\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-me-r",
+      "skillId": "hira-m",
+      "conceptId": "kana-me",
+      "prompt": "Which romaji matches め?",
+      "options": ["ma", "me", "mu", "mo"],
+      "answer": "me",
+      "explanation": "め is read \"me\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-mo-r",
+      "skillId": "hira-m",
+      "conceptId": "kana-mo",
+      "prompt": "Which romaji matches も?",
+      "options": ["ma", "mi", "mu", "mo"],
+      "answer": "mo",
+      "explanation": "も is read \"mo\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ma-k",
+      "skillId": "hira-m",
+      "conceptId": "kana-ma",
+      "prompt": "Which kana is read \"ma\"?",
+      "options": ["ま", "み", "む", "め"],
+      "answer": "ま",
+      "explanation": "\"ma\" is written ま.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-mi-k",
+      "skillId": "hira-m",
+      "conceptId": "kana-mi",
+      "prompt": "Which kana is read \"mi\"?",
+      "options": ["ま", "み", "も", "め"],
+      "answer": "み",
+      "explanation": "\"mi\" is written み.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-mu-k",
+      "skillId": "hira-m",
+      "conceptId": "kana-mu",
+      "prompt": "Which kana is read \"mu\"?",
+      "options": ["む", "み", "も", "め"],
+      "answer": "む",
+      "explanation": "\"mu\" is written む.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-me-k",
+      "skillId": "hira-m",
+      "conceptId": "kana-me",
+      "prompt": "Which kana is read \"me\"?",
+      "options": ["ま", "み", "む", "め"],
+      "answer": "め",
+      "explanation": "\"me\" is written め.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-mo-k",
+      "skillId": "hira-m",
+      "conceptId": "kana-mo",
+      "prompt": "Which kana is read \"mo\"?",
+      "options": ["ま", "も", "む", "め"],
+      "answer": "も",
+      "explanation": "\"mo\" is written も.",
+      "difficulty": 1
+    }
+  ]
+}

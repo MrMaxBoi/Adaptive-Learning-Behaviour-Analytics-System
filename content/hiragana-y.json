@@ -1,0 +1,73 @@
+{
+  "skills": [
+    {
+      "id": "hira-y",
+      "name": "Hiragana Y row",
+      "topic": "hiragana",
+      "level": 1,
+      "prerequisites": ["hira-vowels"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-kana-ya-r",
+      "skillId": "hira-y",
+      "conceptId": "kana-ya",
+      "prompt": "Which romaji matches や?",
+      "options": ["ya", "yu", "yo", "wa"],
+      "answer": "ya",
+      "explanation": "や is read \"ya\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-yu-r",
+      "skillId": "hira-y",
+      "conceptId": "kana-yu",
+      "prompt": "Which romaji matches ゆ?",
+      "options": ["ya", "yu", "yo", "wo"],
+      "answer": "yu",
+      "explanation": "ゆ is read \"yu\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-yo-r",
+      "skillId": "hira-y",
+      "conceptId": "kana-yo",
+      "prompt": "Which romaji matches よ?",
+      "options": ["ya", "yu", "yo", "wa"],
+      "answer": "yo",
+      "explanation": "よ is read \"yo\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ya-k",
+      "skillId": "hira-y",
+      "conceptId": "kana-ya",
+      "prompt": "Which kana is read \"ya\"?",
+      "options": ["や", "ゆ", "よ", "わ"],
+      "answer": "や",
+      "explanation": "\"ya\" is written や.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-yu-k",
+      "skillId": "hira-y",
+      "conceptId": "kana-yu",
+      "prompt": "Which kana is read \"yu\"?",
+      "options": ["や", "ゆ", "よ", "を"],
+      "answer": "ゆ",
+      "explanation": "\"yu\" is written ゆ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-yo-k",
+      "skillId": "hira-y",
+      "conceptId": "kana-yo",
+      "prompt": "Which kana is read \"yo\"?",
+      "options": ["や", "ゆ", "よ", "わ"],
+      "answer": "よ",
+      "explanation": "\"yo\" is written よ.",
+      "difficulty": 1
+    }
+  ]
+}

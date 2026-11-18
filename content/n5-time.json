@@ -1,0 +1,213 @@
+{
+  "skills": [
+    {
+      "id": "n5-time",
+      "name": "N5 time",
+      "topic": "vocabulary",
+      "level": 2,
+      "prerequisites": ["hira-vowels", "hira-k", "hira-s", "hira-t", "hira-n", "hira-h", "hira-m", "hira-y", "hira-r", "hira-w"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-word-kyou-m",
+      "skillId": "n5-time",
+      "conceptId": "word-kyou",
+      "prompt": "What does きょう mean?",
+      "options": ["today", "tomorrow", "yesterday", "now"],
+      "answer": "today",
+      "explanation": "きょう (kyou) means \"today\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ashita-m",
+      "skillId": "n5-time",
+      "conceptId": "word-ashita",
+      "prompt": "What does あした mean?",
+      "options": ["tomorrow", "today", "yesterday", "morning"],
+      "answer": "tomorrow",
+      "explanation": "あした (ashita) means \"tomorrow\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-kinou-m",
+      "skillId": "n5-time",
+      "conceptId": "word-kinou",
+      "prompt": "What does きのう mean?",
+      "options": ["yesterday", "today", "tomorrow", "night"],
+      "answer": "yesterday",
+      "explanation": "きのう (kinou) means \"yesterday\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ima-m",
+      "skillId": "n5-time",
+      "conceptId": "word-ima",
+      "prompt": "What does いま mean?",
+      "options": ["now", "later", "today", "time"],
+      "answer": "now",
+      "explanation": "いま (ima) means \"now\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-asa-m",
+      "skillId": "n5-time",
+      "conceptId": "word-asa",
+      "prompt": "What does あさ mean?",
+      "options": ["morning", "evening", "night", "noon"],
+      "answer": "morning",
+      "explanation": "あさ (asa) means \"morning\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-hiru-m",
+      "skillId": "n5-time",
+      "conceptId": "word-hiru",
+      "prompt": "What does ひる mean?",
+      "options": ["noon / daytime", "morning", "night", "evening"],
+      "answer": "noon / daytime",
+      "explanation": "ひる (hiru) means \"noon\" or \"daytime\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-yoru-m",
+      "skillId": "n5-time",
+      "conceptId": "word-yoru",
+      "prompt": "What does よる mean?",
+      "options": ["night", "morning", "noon", "today"],
+      "answer": "night",
+      "explanation": "よる (yoru) means \"night\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-jikan-m",
+      "skillId": "n5-time",
+      "conceptId": "word-jikan",
+      "prompt": "What does じかん mean?",
+      "options": ["time / hour", "minute", "day", "week"],
+      "answer": "time / hour",
+      "explanation": "じかん (jikan) means \"time\" or \"hour\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-nichiyoubi-m",
+      "skillId": "n5-time",
+      "conceptId": "word-nichiyoubi",
+      "prompt": "What does にちようび mean?",
+      "options": ["Sunday", "Monday", "Saturday", "week"],
+      "answer": "Sunday",
+      "explanation": "にちようび (nichiyoubi) means \"Sunday\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-mainichi-m",
+      "skillId": "n5-time",
+      "conceptId": "word-mainichi",
+      "prompt": "What does まいにち mean?",
+      "options": ["every day", "today", "this week", "sometimes"],
+      "answer": "every day",
+      "explanation": "まいにち (mainichi) means \"every day\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-kyou-w",
+      "skillId": "n5-time",
+      "conceptId": "word-kyou",
+      "prompt": "How do you say \"today\"?",
+      "options": ["きょう", "あした", "きのう", "いま"],
+      "answer": "きょう",
+      "explanation": "\"today\" is きょう (kyou).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ashita-w",
+      "skillId": "n5-time",
+      "conceptId": "word-ashita",
+      "prompt": "How do you say \"tomorrow\"?",
+      "options": ["きょう", "あした", "きのう", "あさ"],
+      "answer": "あした",
+      "explanation": "\"tomorrow\" is あした (ashita).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-kinou-w",
+      "skillId": "n5-time",
+      "conceptId": "word-kinou",
+      "prompt": "How do you say \"yesterday\"?",
+      "options": ["きのう", "きょう", "あした", "よる"],
+      "answer": "きのう",
+      "explanation": "\"yesterday\" is きのう (kinou).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-ima-w",
+      "skillId": "n5-time",
+      "conceptId": "word-ima",
+      "prompt": "How do you say \"now\"?",
+      "options": ["いま", "きょう", "じかん", "ひる"],
+      "answer": "いま",
+      "explanation": "\"now\" is いま (ima).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-asa-w",
+      "skillId": "n5-time",
+      "conceptId": "word-asa",
+      "prompt": "How do you say \"morning\"?",
+      "options": ["あさ", "ひる", "よる", "いま"],
+      "answer": "あさ",
+      "explanation": "\"morning\" is あさ (asa).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-hiru-w",
+      "skillId": "n5-time",
+      "conceptId": "word-hiru",
+      "prompt": "How do you say \"noon / daytime\"?",
+      "options": ["ひる", "あさ", "よる", "きょう"],
+      "answer": "ひる",
+      "explanation": "\"noon / daytime\" is ひる (hiru).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-yoru-w",
+      "skillId": "n5-time",
+      "conceptId": "word-yoru",
+      "prompt": "How do you say \"night\"?",
+      "options": ["よる", "あさ", "ひる", "いま"],
+      "answer": "よる",
+      "explanation": "\"night\" is よる (yoru).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-jikan-w",
+      "skillId": "n5-time",
+      "conceptId": "word-jikan",
+      "prompt": "How do you say \"time / hour\"?",
+      "options": ["じかん", "いま", "まいにち", "ひる"],
+      "answer": "じかん",
+      "explanation": "\"time / hour\" is じかん (jikan).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-nichiyoubi-w",
+      "skillId": "n5-time",
+      "conceptId": "word-nichiyoubi",
+      "prompt": "How do you say \"Sunday\"?",
+      "options": ["にちようび", "まいにち", "きょう", "じかん"],
+      "answer": "にちようび",
+      "explanation": "\"Sunday\" is にちようび (nichiyoubi).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-mainichi-w",
+      "skillId": "n5-time",
+      "conceptId": "word-mainichi",
+      "prompt": "How do you say \"every day\"?",
+      "options": ["まいにち", "にちようび", "きょう", "いま"],
+      "answer": "まいにち",
+      "explanation": "\"every day\" is まいにち (mainichi).",
+      "difficulty": 1
+    }
+  ]
+}

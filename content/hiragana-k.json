@@ -1,0 +1,113 @@
+{
+  "skills": [
+    {
+      "id": "hira-k",
+      "name": "Hiragana K row",
+      "topic": "hiragana",
+      "level": 1,
+      "prerequisites": ["hira-vowels"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-kana-ka-r",
+      "skillId": "hira-k",
+      "conceptId": "kana-ka",
+      "prompt": "Which romaji matches か?",
+      "options": ["ka", "ki", "ku", "ke"],
+      "answer": "ka",
+      "explanation": "か is read \"ka\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ki-r",
+      "skillId": "hira-k",
+      "conceptId": "kana-ki",
+      "prompt": "Which romaji matches き?",
+      "options": ["ka", "ki", "ku", "ko"],
+      "answer": "ki",
+      "explanation": "き is read \"ki\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ku-r",
+      "skillId": "hira-k",
+      "conceptId": "kana-ku",
+      "prompt": "Which romaji matches く?",
+      "options": ["ke", "ki", "ku", "ko"],
+      "answer": "ku",
+      "explanation": "く is read \"ku\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ke-r",
+      "skillId": "hira-k",
+      "conceptId": "kana-ke",
+      "prompt": "Which romaji matches け?",
+      "options": ["ka", "ke", "ku", "ko"],
+      "answer": "ke",
+      "explanation": "け is read \"ke\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ko-r",
+      "skillId": "hira-k",
+      "conceptId": "kana-ko",
+      "prompt": "Which romaji matches こ?",
+      "options": ["ka", "ki", "ku", "ko"],
+      "answer": "ko",
+      "explanation": "こ is read \"ko\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ka-k",
+      "skillId": "hira-k",
+      "conceptId": "kana-ka",
+      "prompt": "Which kana is read \"ka\"?",
+      "options": ["か", "き", "く", "け"],
+      "answer": "か",
+      "explanation": "\"ka\" is written か.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ki-k",
+      "skillId": "hira-k",
+      "conceptId": "kana-ki",
+      "prompt": "Which kana is read \"ki\"?",
+      "options": ["か", "き", "こ", "け"],
+      "answer": "き",
+      "explanation": "\"ki\" is written き.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ku-k",
+      "skillId": "hira-k",
+      "conceptId": "kana-ku",
+      "prompt": "Which kana is read \"ku\"?",
+      "options": ["く", "き", "こ", "け"],
+      "answer": "く",
+      "explanation": "\"ku\" is written く.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ke-k",
+      "skillId": "hira-k",
+      "conceptId": "kana-ke",
+      "prompt": "Which kana is read \"ke\"?",
+      "options": ["か", "き", "く", "け"],
+      "answer": "け",
+      "explanation": "\"ke\" is written け.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ko-k",
+      "skillId": "hira-k",
+      "conceptId": "kana-ko",
+      "prompt": "Which kana is read \"ko\"?",
+      "options": ["か", "こ", "く", "け"],
+      "answer": "こ",
+      "explanation": "\"ko\" is written こ.",
+      "difficulty": 1
+    }
+  ]
+}

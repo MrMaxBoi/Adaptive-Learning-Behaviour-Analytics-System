@@ -5,7 +5,7 @@
       "name": "N5 numbers",
       "topic": "vocabulary",
       "level": 2,
-      "prerequisites": ["hira-vowels"]
+      "prerequisites": ["hira-vowels", "hira-k", "hira-s", "hira-n", "hira-r", "hira-h"]
     }
   ],
   "questions": [
@@ -60,6 +60,56 @@
       "difficulty": 1
     },
     {
+      "id": "q-word-roku-m",
+      "skillId": "n5-numbers",
+      "conceptId": "word-roku",
+      "prompt": "What does ろく mean?",
+      "options": ["five", "six", "seven", "ten"],
+      "answer": "six",
+      "explanation": "ろく (roku) means \"six\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-nana-m",
+      "skillId": "n5-numbers",
+      "conceptId": "word-nana",
+      "prompt": "What does なな mean?",
+      "options": ["six", "seven", "eight", "nine"],
+      "answer": "seven",
+      "explanation": "なな (nana) means \"seven\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-hachi-m",
+      "skillId": "n5-numbers",
+      "conceptId": "word-hachi",
+      "prompt": "What does はち mean?",
+      "options": ["seven", "eight", "nine", "ten"],
+      "answer": "eight",
+      "explanation": "はち (hachi) means \"eight\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-kyuu-m",
+      "skillId": "n5-numbers",
+      "conceptId": "word-kyuu",
+      "prompt": "What does きゅう mean?",
+      "options": ["seven", "eight", "nine", "ten"],
+      "answer": "nine",
+      "explanation": "きゅう (kyuu) means \"nine\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-juu-m",
+      "skillId": "n5-numbers",
+      "conceptId": "word-juu",
+      "prompt": "What does じゅう mean?",
+      "options": ["eight", "nine", "ten", "six"],
+      "answer": "ten",
+      "explanation": "じゅう (juu) means \"ten\".",
+      "difficulty": 1
+    },
+    {
       "id": "q-word-ichi-w",
       "skillId": "n5-numbers",
       "conceptId": "word-ichi",
@@ -107,6 +157,56 @@
       "options": ["よん", "に", "さん", "ご"],
       "answer": "ご",
       "explanation": "\"five\" is ご (go).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-roku-w",
+      "skillId": "n5-numbers",
+      "conceptId": "word-roku",
+      "prompt": "How do you say \"six\"?",
+      "options": ["ろく", "なな", "はち", "じゅう"],
+      "answer": "ろく",
+      "explanation": "\"six\" is ろく (roku).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-nana-w",
+      "skillId": "n5-numbers",
+      "conceptId": "word-nana",
+      "prompt": "How do you say \"seven\"?",
+      "options": ["ろく", "なな", "はち", "きゅう"],
+      "answer": "なな",
+      "explanation": "\"seven\" is なな (nana).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-hachi-w",
+      "skillId": "n5-numbers",
+      "conceptId": "word-hachi",
+      "prompt": "How do you say \"eight\"?",
+      "options": ["ろく", "なな", "はち", "じゅう"],
+      "answer": "はち",
+      "explanation": "\"eight\" is はち (hachi).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-kyuu-w",
+      "skillId": "n5-numbers",
+      "conceptId": "word-kyuu",
+      "prompt": "How do you say \"nine\"?",
+      "options": ["ろく", "なな", "きゅう", "じゅう"],
+      "answer": "きゅう",
+      "explanation": "\"nine\" is きゅう (kyuu).",
+      "difficulty": 1
+    },
+    {
+      "id": "q-word-juu-w",
+      "skillId": "n5-numbers",
+      "conceptId": "word-juu",
+      "prompt": "How do you say \"ten\"?",
+      "options": ["ろく", "なな", "はち", "じゅう"],
+      "answer": "じゅう",
+      "explanation": "\"ten\" is じゅう (juu).",
       "difficulty": 1
     }
   ]

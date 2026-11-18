@@ -1,0 +1,113 @@
+{
+  "skills": [
+    {
+      "id": "hira-t",
+      "name": "Hiragana T row",
+      "topic": "hiragana",
+      "level": 1,
+      "prerequisites": ["hira-vowels"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-kana-ta-r",
+      "skillId": "hira-t",
+      "conceptId": "kana-ta",
+      "prompt": "Which romaji matches た?",
+      "options": ["ta", "chi", "tsu", "te"],
+      "answer": "ta",
+      "explanation": "た is read \"ta\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-chi-r",
+      "skillId": "hira-t",
+      "conceptId": "kana-chi",
+      "prompt": "Which romaji matches ち?",
+      "options": ["ta", "chi", "tsu", "to"],
+      "answer": "chi",
+      "explanation": "ち is read \"chi\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-tsu-r",
+      "skillId": "hira-t",
+      "conceptId": "kana-tsu",
+      "prompt": "Which romaji matches つ?",
+      "options": ["te", "chi", "tsu", "to"],
+      "answer": "tsu",
+      "explanation": "つ is read \"tsu\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-te-r",
+      "skillId": "hira-t",
+      "conceptId": "kana-te",
+      "prompt": "Which romaji matches て?",
+      "options": ["ta", "te", "tsu", "to"],
+      "answer": "te",
+      "explanation": "て is read \"te\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-to-r",
+      "skillId": "hira-t",
+      "conceptId": "kana-to",
+      "prompt": "Which romaji matches と?",
+      "options": ["ta", "chi", "tsu", "to"],
+      "answer": "to",
+      "explanation": "と is read \"to\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ta-k",
+      "skillId": "hira-t",
+      "conceptId": "kana-ta",
+      "prompt": "Which kana is read \"ta\"?",
+      "options": ["た", "ち", "つ", "て"],
+      "answer": "た",
+      "explanation": "\"ta\" is written た.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-chi-k",
+      "skillId": "hira-t",
+      "conceptId": "kana-chi",
+      "prompt": "Which kana is read \"chi\"?",
+      "options": ["た", "ち", "と", "て"],
+      "answer": "ち",
+      "explanation": "\"chi\" is written ち.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-tsu-k",
+      "skillId": "hira-t",
+      "conceptId": "kana-tsu",
+      "prompt": "Which kana is read \"tsu\"?",
+      "options": ["つ", "ち", "と", "て"],
+      "answer": "つ",
+      "explanation": "\"tsu\" is written つ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-te-k",
+      "skillId": "hira-t",
+      "conceptId": "kana-te",
+      "prompt": "Which kana is read \"te\"?",
+      "options": ["た", "ち", "つ", "て"],
+      "answer": "て",
+      "explanation": "\"te\" is written て.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-to-k",
+      "skillId": "hira-t",
+      "conceptId": "kana-to",
+      "prompt": "Which kana is read \"to\"?",
+      "options": ["た", "と", "つ", "て"],
+      "answer": "と",
+      "explanation": "\"to\" is written と.",
+      "difficulty": 1
+    }
+  ]
+}

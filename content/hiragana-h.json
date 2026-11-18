@@ -1,0 +1,113 @@
+{
+  "skills": [
+    {
+      "id": "hira-h",
+      "name": "Hiragana H row",
+      "topic": "hiragana",
+      "level": 1,
+      "prerequisites": ["hira-vowels"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q-kana-ha-r",
+      "skillId": "hira-h",
+      "conceptId": "kana-ha",
+      "prompt": "Which romaji matches は?",
+      "options": ["ha", "hi", "fu", "he"],
+      "answer": "ha",
+      "explanation": "は is read \"ha\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-hi-r",
+      "skillId": "hira-h",
+      "conceptId": "kana-hi",
+      "prompt": "Which romaji matches ひ?",
+      "options": ["ha", "hi", "fu", "ho"],
+      "answer": "hi",
+      "explanation": "ひ is read \"hi\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-fu-r",
+      "skillId": "hira-h",
+      "conceptId": "kana-fu",
+      "prompt": "Which romaji matches ふ?",
+      "options": ["he", "hi", "fu", "ho"],
+      "answer": "fu",
+      "explanation": "ふ is read \"fu\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-he-r",
+      "skillId": "hira-h",
+      "conceptId": "kana-he",
+      "prompt": "Which romaji matches へ?",
+      "options": ["ha", "he", "fu", "ho"],
+      "answer": "he",
+      "explanation": "へ is read \"he\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ho-r",
+      "skillId": "hira-h",
+      "conceptId": "kana-ho",
+      "prompt": "Which romaji matches ほ?",
+      "options": ["ha", "hi", "fu", "ho"],
+      "answer": "ho",
+      "explanation": "ほ is read \"ho\".",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ha-k",
+      "skillId": "hira-h",
+      "conceptId": "kana-ha",
+      "prompt": "Which kana is read \"ha\"?",
+      "options": ["は", "ひ", "ふ", "へ"],
+      "answer": "は",
+      "explanation": "\"ha\" is written は.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-hi-k",
+      "skillId": "hira-h",
+      "conceptId": "kana-hi",
+      "prompt": "Which kana is read \"hi\"?",
+      "options": ["は", "ひ", "ほ", "へ"],
+      "answer": "ひ",
+      "explanation": "\"hi\" is written ひ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-fu-k",
+      "skillId": "hira-h",
+      "conceptId": "kana-fu",
+      "prompt": "Which kana is read \"fu\"?",
+      "options": ["ふ", "ひ", "ほ", "へ"],
+      "answer": "ふ",
+      "explanation": "\"fu\" is written ふ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-he-k",
+      "skillId": "hira-h",
+      "conceptId": "kana-he",
+      "prompt": "Which kana is read \"he\"?",
+      "options": ["は", "ひ", "ふ", "へ"],
+      "answer": "へ",
+      "explanation": "\"he\" is written へ.",
+      "difficulty": 1
+    },
+    {
+      "id": "q-kana-ho-k",
+      "skillId": "hira-h",
+      "conceptId": "kana-ho",
+      "prompt": "Which kana is read \"ho\"?",
+      "options": ["は", "ほ", "ふ", "へ"],
+      "answer": "ほ",
+      "explanation": "\"ho\" is written ほ.",
+      "difficulty": 1
+    }
+  ]
+}

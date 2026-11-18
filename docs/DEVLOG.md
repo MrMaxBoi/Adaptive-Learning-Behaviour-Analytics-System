@@ -132,3 +132,27 @@ Host memory was **critically low** (~1.7–1.9 GB free) for the whole session. A
 - A dashboard integration test (summary/next-up against in-memory Mongo), to run with the rest of the integration suite.
 - Clerk + Atlas env setup to run end-to-end locally.
 - Full content bank (decision #12) — still the one outstanding content item.
+
+---
+
+## 2026-11-18 (later still) — Full content bank (decision #12 closed)
+
+Authored the complete §10 content bank (hand-written JSON — no install/build, safe under the ongoing critical-memory state). This closes the one content item deferred since Week 1.
+
+### What was authored
+- **Hiragana — all 46 basic characters across 10 skills** (one skill per gojūon row):
+  `hira-vowels` (5), `hira-k` `hira-s` `hira-t` `hira-n` `hira-h` `hira-m` (5 each), `hira-y` (3: ya/yu/yo), `hira-r` (5), `hira-w` (3: wa/wo/n). Each row-skill has `hira-vowels` as prerequisite (vowels has none). Both directions per character (kana→romaji, romaji→kana); distractors drawn from the same row.
+- **N5 vocabulary — 50 words across 5 topic skills:** `n5-numbers` (10: 1–10), `n5-greetings` (10), `n5-family` (10), `n5-food` (10), `n5-time` (10). Each vocab skill lists the hiragana rows its words use as prerequisites (FR-32). Both directions per word (meaning↔word); distractors from the same topic.
+
+### Totals (verified)
+15 skills · 192 questions · 96 concepts = **46 hiragana + 50 vocabulary** — matches §10 exactly.
+
+### Tests
+Extended `server/test/content.test.ts`: the per-file list now covers all 15 files, plus a new **bank-wide integrity** block — unique skill ids, unique question ids, every prerequisite resolves to a declared skill (FR-32), every answer ∈ its options, exactly 4 distinct options per question, and the §10 counts (46 hiragana concepts, ≥50 vocab concepts).
+- `vitest content.test.ts`: **51 passing**.
+
+### Note
+The seed script (`server/src/db/seed.ts`) already auto-discovers every `content/*.json`, so no seed change was needed — it will load all 15 files on the next `npm run seed`.
+
+### Still pending (unchanged)
+Client `npm install` + full build + the full/integration test run, once host memory frees. Those remain the Week 3 closeout.
