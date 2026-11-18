@@ -69,3 +69,34 @@ Mongoose models + repositories, auth, practice API, and the seed script that loa
 
 ### Next (Week 3)
 Client: login (Clerk React), practice screen, learner dashboard with plain-language text; insight service.
+
+---
+
+## 2026-11-18 — Proposal cross-check + SPEC alignment to Clerk
+
+### Why
+Checked whether the Clerk auth decision conflicts with the documents actually submitted to the university, then aligned the internal spec to match the build.
+
+### Proposal cross-check (docs reviewed)
+Extracted and searched all three submitted documents for any auth/security mechanism:
+- **CHH_PPF.docx** (Project Proposal Form) — only says learners "register and log in **securely**" and admins "manage user accounts". No mechanism named.
+- **TP080141ChanHaoHean_IR.pdf** (144 pp Initial Report) — auth mentioned only generically (Express handles "authentication processes"; Zustand holds "authentication information"; "register and manage profile"). No bcrypt, JWT, email/password, or named login method.
+- **AI-Driven…System.pdf** — no auth/security content at all.
+
+**Finding:** the bcrypt + JWT + email/password detail existed **only** in the internal `SPEC.md`, never in anything submitted. Clerk therefore conflicts with nothing the university received; it only diverged from the self-written spec. DB choice (MongoDB) in the IR is unchanged (kept via Atlas).
+
+### SPEC.md changes (v0.1 → v0.2)
+- Document status line bumped to v0.2 with a revision note.
+- **FR-01** — now "register and log in securely via Clerk (Google OAuth; email/password also available)".
+- **NFR-04** — rewritten: auth delegated to Clerk, server verifies session tokens, no passwords stored; input-validation / secrets-in-env clauses retained; original bcrypt+JWT plan noted as revised.
+- **§4.1 users** — `passwordHash (bcrypt)` → `clerkUserId` (+ email noted as from Clerk).
+- **§9 API** — removed `POST /auth/register` and `/auth/login`; preamble now describes Clerk session verification + JIT provisioning via `requireAuth`; `/me` mapped to FR-01, FR-03.
+
+### Supervisor heads-up
+Drafted a one-line note for the supervisor at `docs/supervisor-note-auth.md` so the deviation is pre-agreed, not a viva surprise.
+
+### Still deferred
+- Full content bank (decision #12) — unchanged, the one outstanding content item.
+
+### Next (Week 3)
+Client scaffold (React + Clerk), practice screen, learner analytics dashboard. Hold the install/build until host memory frees.

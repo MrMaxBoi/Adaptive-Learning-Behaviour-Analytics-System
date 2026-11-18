@@ -2,7 +2,7 @@
 
 Author: Chan Hao Hean (TP080141)
 Programme: BSc (Hons) Software Engineering, APU
-Document status: v0.1 (initial specification, written before any implementation code)
+Document status: v0.2 (initial spec v0.1 written before implementation; auth revised to Clerk in Week 2 — see docs/SOURCES.md and docs/DEVLOG.md)
 
 ## 0. Provenance
 
@@ -57,7 +57,7 @@ Priorities use MoSCoW: M = Must, S = Should, C = Could.
 **Accounts and roles**
 | ID | Requirement | Pri | Objective |
 |---|---|---|---|
-| FR-01 | A user can register and log in with email and password. | M | — |
+| FR-01 | A user can register and log in securely via Clerk (Google OAuth; email/password also available through Clerk). | M | — |
 | FR-02 | Each user has a role: `learner` or `educator`. | M | — |
 | FR-03 | A learner can view and edit a basic profile (display name, daily goal). | S | — |
 
@@ -115,7 +115,7 @@ Priorities use MoSCoW: M = Must, S = Should, C = Could.
 | NFR-01 | Performance | Session generation completes in under 500 ms for a bank of up to 2,000 questions. |
 | NFR-02 | Performance | Dashboard API responses complete in under 1 s for a learner with 5,000 attempts. |
 | NFR-03 | Reliability | The engine works with no LLM available; LLM failure never blocks practice or the dashboard (IR p20). |
-| NFR-04 | Security | Passwords hashed with bcrypt; JWT auth; all API input validated; secrets only in environment variables. |
+| NFR-04 | Security | Authentication delegated to Clerk (hosted; Google OAuth / email-password). The server verifies Clerk session tokens; no passwords are stored by this system. All API input validated; secrets only in environment variables. *(Initial plan was in-house bcrypt + JWT — revised in Week 2, see docs/SOURCES.md.)* |
 | NFR-05 | Security | A learner can only read their own data; educator endpoints require the educator role. |
 | NFR-06 | Privacy | Only data needed for the objectives is collected; follows the principles of Malaysia's PDPA 2010. |
 | NFR-07 | Usability | Learner-facing text avoids model terms (no "probability", "ease factor"); see §7.2. |
@@ -197,8 +197,8 @@ Eight collections, from the proposal schema.
 | Field | Type | Notes |
 |---|---|---|
 | _id | ObjectId | |
-| email | string | unique, lower-cased |
-| passwordHash | string | bcrypt |
+| email | string | unique, lower-cased (from Clerk) |
+| clerkUserId | string | unique; Clerk subject, set on first login |
 | displayName | string | |
 | role | `learner` \| `educator` | |
 | classCode | string? | groups learners for the educator view |
@@ -480,13 +480,11 @@ For learners sharing the educator's `classCode`: class accuracy trend, the 5 mos
 
 ## 9. API
 
-All routes are prefixed with `/api/v1`. All except auth require a JWT.
+All routes are prefixed with `/api/v1`. All routes require a valid Clerk session token (verified by the `requireAuth` middleware), which also provisions the local `users` record on first login (JIT).
 
 | Method | Route | Purpose | FR |
 |---|---|---|---|
-| POST | /auth/register | create account | FR-01 |
-| POST | /auth/login | get token | FR-01 |
-| GET | /me | profile | FR-03 |
+| GET | /me | profile (JIT-provisioned on first call) | FR-01, FR-03 |
 | POST | /practice/sessions | build a session `{strategy?}` | FR-40–43 |
 | POST | /practice/sessions/:id/answers | submit an answer | FR-10–30 |
 | POST | /practice/sessions/:id/finish | close a session | FR-12 |
